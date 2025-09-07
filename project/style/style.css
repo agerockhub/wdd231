@@ -74,6 +74,18 @@ footer {
     font-weight: bold;
 }
 
+.humburger a {
+    padding: 1rem;
+    background-color: var(--color-primary1-blue);
+    list-style: none;
+    color: var(--color-white);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .hero {
     padding: 2rem;
     display: grid;
