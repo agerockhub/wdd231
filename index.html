@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Boateng">
+    <meta name="description" content="WDD 231, Chamber of Commerce website, homepage">
+    <title>WDD 231 | Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/large.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-info">
+            <img src="images/logo.png" alt="website logo" width="100px" height="100px">
+            <h1>Tesano Chamber of Commerce</h1>
+        </div>
+        <button id="menuButton" aria-label="Menu">&#9776;</button>
+        <nav id="navMenu">
+            <ul>
+                <li class="humburger">Home</li>
+                <li class="humburger">Discover</li>
+                <li class="humburger">Directory</li>
+                <li class="humburger">Join</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <section><img src="images/tesano.jpg" alt="tesano community" class="hero-img"></section>
+            <h2 class="page-id">Home</h2>
+        </div>
+        <div class="activities">
+            <section class="activity-item">
+                <div class="activity-title">Event</div>
+                <div class="activity-container"></div>
+            </section>
+            <section class="activity-item">
+                <div class="activity-title">Current weather</div>
+                <div class="activity-container">Weather forecast</div>
+            </section>
+            <section class="activity-item">
+                <div class="activity-title">Weather forecast</div>
+                <div class="activity-container">content here</div>
+            </section>
+        </div>
+        <!--DETAILS START-->
+        <div class="business-info">
+            <section class="business-info-item">
+                <div class="business-info-title">
+                    <h2>Business Name</h2>
+                    <p>Tag line of business</p>
+                </div>
+                <div class="business-info-container">
+                    <div class="busines-logo"><img src="images/goil.jpg" alt="goil co. Ltd"></div>
+                    <div class="business-details">
+                        <ul>
+                            <li><strong>NAME:</strong>Goil Ghana Ltd.</li>
+                            <li><strong>EMAIL:</strong>info@goil.co</li>
+                            <li><strong>URL</strong>:goil.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="business-info-item">
+                <div class="business-info-title">
+                    <h2>Business Name</h2>
+                    <p>Tag line of business</p>
+                </div>
+                <div class="business-info-container">
+                    <div class="busines-logo"><img src="images/nsia.jpg" alt="Nsia co. Ltd"></div>
+                    <div class="business-details">
+                        <ul>
+                            <li><strong>NAME:</strong>Nsia Ltd.</li>
+                            <li><strong>EMAIL:</strong>info@nsia.co</li>
+                            <li><strong>URL</strong>:goil.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="business-info-item">
+                <div class="business-info-title">
+                    <h2>Business Name</h2>
+                    <p>Tag line of business</p>
+                </div>
+                <div class="business-info-container">
+                    <div class="busines-logo"><img src="images/hollard-insurance.jpg" alt="Hollard Ltd"></div>
+                    <div class="business-details">
+                        <ul>
+                            <li><strong>NAME:</strong>Goil Ghana Ltd.</li>
+                            <li><strong>EMAIL:</strong>info@hollard.community</li>
+                            <li><strong>URL</strong>:hollard.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="community-info">
+            <section>
+                <h2>Community Information</h2>
+                <p>
+                    Welcome to Tesano
+                    Tesano is a thriving hub filled with innovative entrepreneurs, passionate residents, and a vibrant
+                    community spirit.
+                    Through collaboration, we foster an ecosystem where businesses grow, patrons benefit from special
+                    discounts, and the
+                    community flourishes.
+                </p>
+            </section>
+            <section>
+                <h3>Quick links/Highlights:</h3>
+                <ul>
+                    <li>Community Events Calendar</li>
+                    <li>Business Directory</li>
+                    <li>Chamber News & Updates</li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>
