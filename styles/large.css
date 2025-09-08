@@ -28,52 +28,34 @@
         font-weight: 500;
     }
 
-    .hero {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        /* add spacing */
-        align-items: center;
-    }
-
-    .hero-img {
+    .proile-img {
         max-width: 100%;
     }
 
-    .community-info {
+    .sec-1 {
         display: grid;
-        grid-template-columns: 1.5fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .sec-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
         padding: 2rem;
-        background-color: #BFEAF8;
-        align-items: center;
     }
+}
 
-    .activities {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        padding: 0 1rem;
-        gap: 10px;
-        align-items: start;
-        margin-bottom: 2rem;
+/* Tablet screens */
+@media (min-width: 650px) {
+    #courseContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .business-info {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 1rem;
-        gap: 10px;
-        align-items: start;
-        margin-bottom: 2rem;
+/* Desktop screens */
+@media (min-width: 1024px) {
+    #courseContainer {
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .business-info-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 5px;
-        padding: 1rem;
-        min-height: 150px;
-        background-color: var(--color-primary1-blue);
-    }
-
 }

@@ -29,21 +29,16 @@ h2 {
 
 p {
     font-family: Lora;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
+/*SITE LOGO & NAME*/
 .site-info {
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 2fr;
 }
 
-footer {
-    background-color: var(--color-primary1-blue);
-    color: var(--color-white);
-    text-align: center;
-    padding: 1rem;
-}
 
 #menuButton {
     font-size: 2rem;
@@ -68,11 +63,13 @@ footer {
     background-color: var(--color-primary1-blue);
     list-style: none;
     color: var(--color-white);
+    text-decoration: none;
     border-bottom: solid 1px var(--color-white);
     font-family: Montserrat;
     font-size: 1.2em;
     font-weight: bold;
 }
+
 .humburger a {
     padding: 1rem;
     background-color: var(--color-primary1-blue);
@@ -85,30 +82,28 @@ footer {
     font-weight: bold;
 }
 
-.hero {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
+.humburger a:hover {
+    padding: 1rem;
+    background-color: var(--color-primary1-blue);
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-black);
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-
-.hero-img {
-    width: 100%;
-}
-
-.page-id {
-    padding: 0;
-    margin: 0;
-}
-
-/* style.css */
-
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* prevent overflow from padding/border */
+.active {
+    padding: 1rem;
+    background-color: var(--color-white);
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-white);
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 html,
@@ -120,88 +115,148 @@ body {
 
 main {
     min-width: 320px;
+    padding: 1rem;
     /* ensure minimum size */
 }
 
-/* Images responsive */
-img,
-.hero-img {
+.sec-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.sec-1-div {
+    background-color: var(--color-neutral-dark);
+}
+
+.sec-1-div p {
+    padding: 1rem 3rem;
+}
+
+.proile-img {
     max-width: 100%;
-    height: auto;
-    display: block;
 }
 
-.join-button {
+.sec-1 h1 {
+    grid-column: 1 / -1;
+    /* span across all columns */
+    text-align: left;
+    /* optional */
+}
+
+.sec-1-tabs {
     padding: 1rem;
-    background: #106DC9;
+    text-align: center;
+    background-color: #106DC9;
     color: var(--color-white);
-    border: none;
-    cursor: pointer;
+    font-family: Montserrat;
 }
 
-.community-info {
+.sec-2 {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
     padding: 2rem;
-    background-color: #BFEAF8;
 }
 
-.activities {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    gap: 10px;
-    align-items: start;
-    margin-bottom: 2rem;
-}
-
-.activity-item {
-    padding: 0;
-    background-color: var(--color-primary1-blue);
-    color: var(--color-white);
-}
-
-.activity-title {
-    background: var(--color-secondary-green);
+.sec-2-tabs {
     padding: 1rem;
+    text-align: center;
+    background-color: #106DC9;
     color: var(--color-white);
-    font-weight: bold;
+    font-family: Montserrat;
+    grid-column: 1 / -1;
+    /* span across all columns */
+    text-align: center;
+    /* optional */
 }
 
-.activity-container {
-    padding: 1rem;
-    min-height: 180px;
-    background-color: var(--color-primary1-blue);
-}
-
-/*BUSINESS INFO*/
-.business-info {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    gap: 10px;
-    align-items: start;
-    margin-bottom: 2rem;
-}
-
-.business-info-item {
-    padding: 0;
-    background-color: var(--color-primary1-blue);
-    color: var(--color-white);
-}
-
-.business-info-title {
-    background: var(--color-secondary-green);
-    padding: 1rem;
-    color: var(--color-white);
+.total-credit {
+    font-family: Lora;
+    grid-column: 1 / -1;
     text-align: center;
 }
 
-.business-info-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding: 1rem;
-    min-height: 150px;
+footer {
     background-color: var(--color-primary1-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Course Cards */
+.course-card {
+    background-color: var(--color-neutral-dark);
+    border: 2px solid var(--color-primary1-blue);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: Lora;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed courses */
+.course-card.completed {
+    background-color: var(--color-secondary-green);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+
+/* Buttons */
+#all,
+#cse,
+#wdd {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#all {
+    background-color: var(--color-primary1-blue);
+    color: var(--color-white);
+}
+
+#cse {
+    background-color: var(--color-primary2-blue);
+    color: var(--color-white);
+}
+
+#wdd {
+    background-color: var(--color-secondary-green);
+    color: var(--color-white);
+}
+
+/* Container for courses */
+#courseContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Course Card */
+.course-card {
+    background-color: var(--color-neutral-dark);
+    border: 2px solid var(--color-primary1-blue);
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: Lora;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+/* Completed courses */
+.course-card.completed {
+    background-color: var(--color-secondary-green);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 }
