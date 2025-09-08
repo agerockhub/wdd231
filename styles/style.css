@@ -260,3 +260,8 @@ footer {
     color: var(--color-white);
     border: 2px solid var(--color-white);
 }
+
+.sec-3 {
+    padding: 1rem;
+    text-align: center;
+}
