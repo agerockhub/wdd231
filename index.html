@@ -4,11 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 PAGE</title>
+    <meta name="author" content="Daniel Boateng">
+    <meta name="description" content="WDD 231, Chamber of Commerce website, homepage">
+    <title>WDD231 | Course Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
-    welcome to our course page
+    <header>
+        <div class="site-info">
+            <img src="images/wdd-logo.png" alt="website logo">
+            <h1>WDD231 | Course Homepage</h1>
+        </div>
+        <button id="menuButton" aria-label="Menu">&#9776;</button>
+        <nav id="navMenu">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="humburger"><a href="chamber.html">Chamber</a></li>
+                <li class="humburger"><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>WDD231 | Course Homepage</h1>
+        <section class="sec-1">
+
+            <div class="sec-1-div">
+                <div class="sec-1-tabs">About me</div>
+                <p>
+                    My name is Daniel Boateng, and I am an active student at Brigham Young University. I am deeply
+                    passionate about Web
+                    Development and the opportunities it offers to create meaningful, user-friendly digital experiences.
+                    This term, I
+                    registered for WDD231, a course that allows me to strengthen my skills in modern web design and
+                    development practices.
+                </p>
+                <p>
+                    I enjoy exploring new tools, frameworks, and coding techniques that help me grow as a developer and
+                    prepare me for
+                    real-world projects. My goal is to build impactful websites that not only function smoothly but also
+                    provide value to
+                    users. I am committed to continuous learning and look forward to contributing my creativity and
+                    skills to future web
+                    development projects.
+                </p>
+            </div>
+            <div class="sec-1-div">
+                <div class="sec-1-tabs">Student Photo</div>
+                <p>
+                    <img src="images/daniel-boateng.jpg" alt="Daniel Boateng" class="proile-img">
+                </p>
+            </div>
+        </section>
+        <section class="sec-2">
+            <div class="sec-2-tabs"> Web Certificate Courses</div>
+            <input type="button" value="ALL" id="all">
+            <input type="button" value="CSE" id="cse">
+            <input type="button" value="WDD" id="wdd">
+            <!-- Course cards go here -->
+
+            <div id="courseContainer"></div>
+
+            <p class="total-credit" id="credit"> The total credit for the course listed above is 6</p>
+        </section>
+        <section class="sec-3">
+            <p><a href="https://www.linkedin.com/in/daniel-boateng-12362aa3/" target="new"><i
+                        class="fa-brands fa-linkedin"></i></a> | <a href="https://www.instagram.com/agerock2013/"
+                    target="new"><i class="fa-brands fa-square-instagram"></i></a> | <a
+                    href="https://www.facebook.com/agerockx/" target="new"><i
+                        class="fa-brands fa-square-facebook"></i></a></p>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,239 @@
+:root {
+    --color-primary1-blue: #106DC9;
+    --color-primary2-blue: #107293;
+    --color-secondary-green: #073240;
+    --color-neutral-light: #E8F7FC;
+    --color-neutral-dark: #BFEAF8;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--color-neutral-light);
+    color: var(--color-primary1-blue);
+    margin: 0;
+    padding: 1rem;
+    font-family: Montserrat;
+}
+
+h1,
+h2 {
+    font-family: Montserrat;
+    padding: 1rem;
+}
+
+p {
+    font-family: Lora;
+    padding: 1rem;
+}
+
+/*SITE LOGO & NAME*/
+.site-info {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+footer {
+    background-color: var(--color-primary1-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+#menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--gold);
+    cursor: pointer;
+    display: block;
+}
+
+#navMenu {
+    display: none;
+}
+
+#navMenu.open {
+    display: block;
+}
+
+/*humburger MENU*/
+.humburger {
+    padding: 1rem;
+    background-color: var(--color-primary1-blue);
+    list-style: none;
+    color: var(--color-white);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.humburger a {
+    padding: 1rem;
+    background-color: var(--color-primary1-blue);
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-white);
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.humburger a:hover {
+    padding: 1rem;
+    background-color: var(--color-primary1-blue);
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-black);
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.active {
+    padding: 1rem;
+    background-color: var(--color-white);
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-white);
+    border-bottom: solid 1px var(--color-white);
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* kills accidental horizontal scrollbars */
+}
+
+main {
+    min-width: 320px;
+    padding: 1rem;
+    /* ensure minimum size */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    /* Keeps proportions */
+    display: block;
+    /* Removes whitespace below image */
+}
+
+html Copy code footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-primary1-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+}
+
+p a {
+    color: #ffffff;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.activity-item {
+    min-height: 150px;
+    background: var(--color-neutral-dark);
+}
+
+.activity-title {
+    padding: 0.5rem;
+    background-color: #106DC9;
+    color: var(--color-white);
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Toggle buttons */
+.view-toggle {
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #0073e6;
+    color: #fff;
+}
+
+.view-toggle button:hover {
+    background: #005bb5;
+}
+
+/* Grid container */
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* List container */
+#cards.list {
+    display: block;
+}
+
+/* Card styling */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* List view card */
+#cards.list .card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#cards.list .card img {
+    margin-right: 20px;
+}

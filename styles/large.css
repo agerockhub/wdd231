@@ -1,0 +1,45 @@
+/* large.css */
+@media (min-width: 650px) {
+    #menuButton {
+        display: none;
+    }
+
+    #navMenu {
+        display: block !important;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: var(--color-white);
+    }
+
+    nav li {
+        border-left: solid 2px var(--color-white);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #111827;
+        font-weight: 500;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: var(--color-primary1-blue);
+        color: var(--color-white);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+    }
+}

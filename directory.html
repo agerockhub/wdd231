@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Boateng">
+    <meta name="description" content="WDD 231, Tesano Chamber of Commerce website, homepage">
+    <title>Chamber of Commerce | WDD231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta property="og:title" content="Tesano Chamber of Commerce">
+    <meta property="og:description"
+        content="Identify all the businesses in the Tesano community, create an ecco system of support">
+    <meta property="og:url" content="https://www.tesanochamberofcommerce">
+    <meta property="og:image" content="https://www.tesanochamberofcomerce">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="site-info">
+            <img src="images/chamber-logo.png" alt="website logo" class="hero img">
+            <h1>Tesano Chamber of Commerce</h1>
+        </div>
+        <button id="menuButton" aria-label="Menu">&#9776;</button>
+        <nav id="navMenu">
+            <ul>
+                <li class="humburger"><a href="index.html">Home</a></li>
+                <li class="humburger"><a href="discovery.html">Discover</a></li>
+                <li class="humburger"><a href="directory.html">Directory</a></li>
+                <li class="humburger"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-id">Home</h2>
+        <div class="hero">
+            <section><img src="images/tesano-community.jpg" alt="tesano community" class="hero-img" class="proile-img">
+            </section>
+        </div>
+        <div class="activities">
+            <section class="activity-item">
+                <div class="activity-title">
+                    <h2>Event</h2>
+                </div>
+                <div class="activity-container"></div>
+            </section>
+            <section class="activity-item">
+                <div class="activity-title">
+                    <h2>Current weather</h2>
+                </div>
+                <div class="activity-container">Weather forecast</div>
+            </section>
+            <section class="activity-item">
+                <div class="activity-title">
+                    <h2>Weather forecast</h2>
+                </div>
+                <div class="activity-container">content here</div>
+            </section>
+        </div>
+        <div id="cards" class="grid"></div>
+        <!--BUSINESS LIST END-->
+        <div class="community-info">
+            <section>
+                <h1>Company Members Directory</h1>
+                <div class="view-toggle">
+                    <button id="gridBtn">Grid View</button>
+                    <button id="listBtn">List View</button>
+                </div>
+
+                <div id="cards" class="grid"></div>
+
+            </section>
+            <section>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+        <div>
+            <p><a href="https://www.linkedin.com/in/daniel-boateng-12362aa3/" target="new"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                | <a href="https://www.instagram.com/agerock2013/" target="new"><i
+                        class="fa-brands fa-square-instagram"></i></a> |
+                <a href="https://www.facebook.com/agerockx/" target="new"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </p>
+        </div>
+        <div>
+            <p>Tesano Chamber of Commerce
+                No.767/22,
+                Off Abaka Road,
+                Tesano,</p>
+            <p>info@tesanochamberofcommerce.org
+                (233)244141739</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/directory.js"></script>
+
+</body>
+
+</html>
