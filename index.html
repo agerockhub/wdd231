@@ -4,12 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Boateng">
+    <meta name="description" content="WDD 231 Course homepage">
     <title>WDD 231-Daniel Boateng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
-    <h1>WDD 231-Daniel Boateng</h1>
+    <header>
+        <img src="images/logo.svg" alt="" width="24" height="24">
+        <span>WDD-231 | Daniel Boateng</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nave-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="content">
+            <h2>About me</h2>
+            <p>
+                My name is Daniel Boateng, and I am an active student at Brigham Young University. I am deeply
+                passionate about Web
+                Development and the opportunities it offers to create meaningful, user-friendly digital experiences.
+                This term, I
+                registered for WDD231, a course that allows me to strengthen my skills in modern web design and
+                development practices.
 
+                I enjoy exploring new tools, frameworks, and coding techniques that help me grow as a developer and
+                prepare me for
+                real-world projects. My goal is to build impactful websites that not only function smoothly but also
+                provide value to
+                users. I am committed to continuous learning and look forward to contributing my creativity and
+                skills
+                to future web
+                development projects.
+            </p>
+        </section>
+        <section class="content">
+            <h2>Student Photo</h2>
+            <img src="images/me.jpg" alt="Daniel Boateng" class="photo">
+        </section>
+        <section class="cert-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+            <div class="certificate"></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <img src="images/linkedin.svg" alt="Linked in" width="24px">
+            <img src="images/github.svg" alt="GitHub" width="24px">
+            <img src="images/twitter-x.svg" alt="Twitter-X" width="24px">
+        </p>
+        <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </body>
 
 </html>
