@@ -6,9 +6,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
+        technology: ['Python'],
         completed: true
     },
     {
@@ -17,11 +15,8 @@ const courses = [
         title: 'Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming.',
+        technology: ['HTML', 'CSS'],
         completed: true
     },
     {
@@ -30,10 +25,8 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
+        description: 'Students become more organized, efficient, and powerful computer programmers by learning to write, call, debug, and test functions.',
+        technology: ['Python'],
         completed: true
     },
     {
@@ -42,10 +35,8 @@ const courses = [
         title: 'Programming with Classes',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
+        description: 'This course introduces the notion of classes and objects, encapsulation, inheritance, and polymorphism.',
+        technology: ['C#'],
         completed: true
     },
     {
@@ -54,12 +45,8 @@ const courses = [
         title: 'Dynamic Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        description: 'Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
     },
     {
@@ -68,29 +55,40 @@ const courses = [
         title: 'Frontend Web Development I',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        description: 'Focuses on user experience, accessibility, compliance, performance optimization, and basic API usage.',
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
-]
-
+];
 
 const coursesContainer = document.querySelector('.certificate');
 const allBtn = document.querySelector('#allBtn');
 const wddBtn = document.querySelector('#wddBtn');
 const cseBtn = document.querySelector('#cseBtn');
 
-// Function to render courses
+// ✅ Create a credit display element
+const creditDisplay = document.createElement('p');
+creditDisplay.style.textAlign = 'center';
+creditDisplay.style.fontWeight = '600';
+creditDisplay.style.marginBottom = '1rem';
+coursesContainer.parentNode.insertBefore(creditDisplay, coursesContainer);
+
+// ✅ Function to calculate total credits using reduce
+function calculateTotalCredits(courseList) {
+    return courseList.reduce((total, course) => total + course.credits, 0);
+}
+
+// ✅ Function to render courses
 function displayCourses(filteredCourses) {
     coursesContainer.innerHTML = ''; // clear existing
+
+    // Display total credits
+    const totalCredits = calculateTotalCredits(filteredCourses);
+    creditDisplay.textContent = `Total Credits: ${totalCredits}`;
+
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
-        card.classList.add('course-card');
-        card.classList.add(course.completed ? 'completed' : 'incomplete');
+        card.classList.add('course-card', course.completed ? 'completed' : 'incomplete');
 
         card.innerHTML = `
             <h3>${course.subject} ${course.number}: ${course.title}</h3>
@@ -104,10 +102,10 @@ function displayCourses(filteredCourses) {
     });
 }
 
-// Initial render - show all
+// ✅ Initial render - show all
 displayCourses(courses);
 
-// Filter buttons
+// ✅ Filter buttons
 allBtn.addEventListener('click', () => displayCourses(courses));
 wddBtn.addEventListener('click', () => displayCourses(courses.filter(course => course.subject === 'WDD')));
 cseBtn.addEventListener('click', () => displayCourses(courses.filter(course => course.subject === 'CSE')));
