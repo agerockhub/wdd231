@@ -22,25 +22,15 @@
 
     .navigation ul {
         display: flex;
+        justify-content: flex-end;
     }
 
 }
 
-/* Responsive layout for certificates */
+/* FOOTER */
 @media (min-width: 40rem) {
-    .certificate {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main {
+    footer {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: .5rem;
-    }
-}
-
-@media (min-width: 64rem) {
-    .certificate {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

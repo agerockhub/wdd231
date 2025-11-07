@@ -99,8 +99,24 @@ footer {
     border-bottom: solid 1px var(--color-teal);
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+}
+
 footer p {
-    text-align: center;
-    font-family: Montserrat;
-    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    /* optional: centers them horizontally */
+    align-items: center;
+    gap: 10px;
+    /* space between images */
+    padding: .5rem;
+}
+
+footer p img {
+    height: 60px;
+    /* optional: keep them uniform */
+    width: auto;
 }
