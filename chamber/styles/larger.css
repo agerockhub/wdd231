@@ -25,6 +25,13 @@
         justify-content: flex-end;
     }
 
+    main {
+        position: relative;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
 }
 
 /* MAIN*/
@@ -48,7 +55,7 @@
 @media (min-width: 40rem) {
     .keynote {
         right: 10%;
-        bottom: 15%;
+        bottom: 35%;
         font-size: 1.1rem;
     }
 }
@@ -56,7 +63,7 @@
 /* Desktop and wide screens */
 @media (min-width: 64rem) {
     .keynote {
-        right: 15%;
+        right: 10%;
         bottom: 20%;
         font-size: 1.2rem;
     }

@@ -102,13 +102,17 @@ header span {
 /*-----------MAIN CONTENT---------------*/
 main {
     position: relative;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 /* Base (mobile) */
 .keynote {
     position: absolute;
     right: 5%;
-    bottom: 10%;
+    bottom: 60%;
     padding: 0.75rem 1.25rem;
     background-color: var(--color-black);
     border: none;
@@ -129,6 +133,24 @@ main {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+h2 {
+    padding: .5rem;
+    background: var(--color-dark-gray);
+    color: var(--color-white);
+    text-align: left;
+}
+
+.content {
+    padding: 1rem;
+    background-color: var(--color-light-teal);
+    min-height: 150px;
+    border: solid 1px var(--color-teal);
+}
+
+h1 {
+    grid-column: 1/-1;
 }
 
 /*---------FOOTER-------------*/
