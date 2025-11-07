@@ -82,17 +82,49 @@ header span {
     border-bottom: solid 1px var(--color-teal);
 }
 
-.navigation li.current {
-    background-color: var(--color-light-teal);
+.current a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-teal);
 }
+
+
 
 
 .navigation a:hover {
-    background-color: var(--color-teal);
-    color: #000;
+    background-color: var(--color-text-dark);
+    color: var(--color-white);
 }
 
 /*-----------MAIN CONTENT---------------*/
+main {
+    position: relative;
+}
+
+/* Base (mobile) */
+.keynote {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-black);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.keynote:hover {
+    background-color: var(--color-dark-gray);
+    transform: scale(1.05);
+    color: var(--color-white);
+}
+
 .hero-img {
     max-width: 100%;
     height: auto;
@@ -121,7 +153,7 @@ footer p {
 }
 
 footer p img {
-    height: 60px;
+    height: 35px;
     /* optional: keep them uniform */
     width: auto;
 }

@@ -27,7 +27,7 @@
 
 }
 
-/* FOOTER */
+/* MAIN*/
 @media (min-width: 40rem) {
     .hero-img {
         min-width: 100%;
@@ -35,8 +35,29 @@
         display: block;
     }
 
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* KEYNOTE BUTTON*/
+/* Tablet and larger screens */
+@media (min-width: 40rem) {
+    .keynote {
+        right: 10%;
+        bottom: 15%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop and wide screens */
+@media (min-width: 64rem) {
+    .keynote {
+        right: 15%;
+        bottom: 20%;
+        font-size: 1.2rem;
     }
 }
