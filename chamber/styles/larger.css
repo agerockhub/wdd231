@@ -29,6 +29,12 @@
 
 /* FOOTER */
 @media (min-width: 40rem) {
+    .hero-img {
+        min-width: 100%;
+        height: auto;
+        display: block;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

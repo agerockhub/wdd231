@@ -93,6 +93,11 @@ header span {
 }
 
 /*-----------MAIN CONTENT---------------*/
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /*---------FOOTER-------------*/
 footer {
