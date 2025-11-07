@@ -12,11 +12,39 @@
         content="The Tesano Chamber of Commerce is a dynamic network dedicated to promoting business growth, innovation, and community development in Tesano. We connect local entrepreneurs, support economic initiatives, and create opportunities for sustainable partnerships that drive progress and prosperity">
     <meta property="og:image" content="https://agerockhub.github.io/wdd231/chamber/images/logo.png">
     <meta property="og:url" content="https://agerockhub.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>Tesano Chamber of Commerce</title>
 </head>
 
 <body>
-
+    <header>
+        <img src="images/logo.png" alt="site logo" width="24" height="24">
+        <span>Tesano Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nave-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="#">Other</a></li>
+        </ul>
+    </nav>
+    <main></main>
+    <footer>
+        <p>
+            <img src="images/linkedin.svg" alt="Linked in" width="24">
+            <img src="images/github.svg" alt="GitHub" width="24">
+            <img src="images/twitter-x.svg" alt="Twitter-X" width="24">
+        </p>
+        <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </body>
 
 </html>
