@@ -116,7 +116,7 @@ main {
     bottom: 60%;
     padding: 0.75rem 1.25rem;
     background-color: var(--color-black);
-    border: none;
+    border: solid 1px #ffffff;
     border-radius: 8px;
     font-size: 1rem;
     color: var(--color-white);
@@ -144,11 +144,12 @@ h2 {
 }
 
 .content {
-    padding: 1rem;
+    padding: 3rem;
     background-color: var(--color-light-teal);
     min-height: 150px;
     border: solid 1px var(--color-teal);
 }
+
 
 .dynamic {
     grid-column: 1/-1;
@@ -234,6 +235,38 @@ h1 {
     color: var(--color-red);
 }
 
+/*WEATHER BOX*/
+.weather-box {
+    text-align: center;
+    padding: 0rem;
+    background: #eef5ff;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.weather-box img {
+    width: 80px;
+}
+
+.weather-box h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.weather-box p {
+    margin: 5px 0;
+}
+
+
+.current-box {
+    text-align: center;
+    padding: 15px;
+}
+
+.current-box img {
+    width: 80px;
+    height: 80px;
+}
 
 /*---------FOOTER-------------*/
 footer {
