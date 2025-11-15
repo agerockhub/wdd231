@@ -146,7 +146,7 @@ h2 {
 .content {
     padding: 3rem;
     background-color: var(--color-light-teal);
-    min-height: 150px;
+    min-height: 450px;
     border: solid 1px var(--color-teal);
 }
 
@@ -266,6 +266,61 @@ h1 {
 .current-box img {
     width: 80px;
     height: 80px;
+}
+
+/*SPOTLIGHT*/
+.spotlight {
+    grid-column: 1/-1;
+    display: grid;
+    background-color: var(--color-text-dark);
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.spot-card {
+
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #073b7d;
+    /* matches Tesano theme */
+}
+
+.spot-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spot-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: #073b7d;
+}
+
+.spot-card p {
+    font-size: .9rem;
+    margin: .3rem 0;
+}
+
+.spot-card .visit-btn {
+    display: inline-block;
+    margin-top: .7rem;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #073b7d;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.spot-card .visit-btn:hover {
+    background: #0b57bd;
 }
 
 /*---------FOOTER-------------*/

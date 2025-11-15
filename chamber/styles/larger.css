@@ -52,6 +52,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
 /* Desktop and wide screens */
@@ -61,4 +62,5 @@
         bottom: 20%;
         font-size: 1.2rem;
     }
+
 }
