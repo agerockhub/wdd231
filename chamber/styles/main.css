@@ -143,6 +143,7 @@ h2 {
     text-align: left;
 }
 
+
 .content {
     padding: 3rem;
     background-color: var(--color-light-teal);
@@ -321,6 +322,76 @@ h1 {
 
 .spot-card .visit-btn:hover {
     background: #0b57bd;
+}
+
+
+.join {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+button {
+    padding: .5rem;
+    cursor: pointer;
+}
+
+/*---------------FORM SECTION-----------------*/
+
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+textarea {
+    min-height: 100px;
+}
+
+
+input[type="submit"] {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: var(--color-dark-gray);
+}
+
+/*------------CARD-------------*/
+
+.levels-wrap {
+    height: auto;
+}
+
+.levels {
+    padding: 1rem;
+    margin: 0.5rem;
+    border: solid 1px var(--color-dark-gray);
+    border-radius: 0 8px 0 8px;
 }
 
 /*---------FOOTER-------------*/

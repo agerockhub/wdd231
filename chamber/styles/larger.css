@@ -32,6 +32,12 @@
         grid-template-columns: 2fr 1fr 1fr;
         gap: 10px;
     }
+
+    .join {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* MAIN*/

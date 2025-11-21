@@ -31,9 +31,9 @@
     </header>
     <nav id="nave-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
@@ -42,22 +42,86 @@
         <img src="images/tesano.jpg" alt="main landing page image" class="hero-img">
     </div>
     <main>
-        <h1>Home</h1>
-        <section>
-            <h2>Events</h2>
-            <div class="content"></div>
-        </section>
-        <section>
-            <h2>Current Weather</h2>
-            <div class="content"></div>
-        </section>
-        <section>
-            <h2>Weather Forecast</h2>
-            <div class="content"></div>
-        </section>
-        <div class="dynamic">
+        <h1>Join</h1>
+        <section class="join">
 
-        </div>
+            <div class="content">
+                <h1>Join the Chamber of Commerce</h1>
+                <form method="get" action="thankyou.html">
+
+
+                    <label title="Enter your first name">First Name
+                        <input type="text" name="first-name" required autocomplete="given-name" />
+                    </label>
+
+
+                    <label title="Enter your last name">Last Name
+                        <input type="text" name="last-name" required autocomplete="family-name" />
+                    </label>
+
+
+                    <label title="Enter your organizational title">Organizational Title
+                        <input type="text" name="org-title" autocomplete="organization-title"
+                            pattern="[A-Za-z\-\s]{7,}" />
+                    </label>
+
+
+                    <label title="Enter your email address">Email Address
+                        <input type="email" name="email" required autocomplete="email" placeholder="example@mail.com" />
+                    </label>
+
+
+                    <label title="Enter your mobile phone number">Mobile Phone Number
+                        <input type="tel" name="phone" required autocomplete="tel" />
+                    </label>
+
+
+                    <label title="Enter your business or organization's name">Business/Organization Name
+                        <input type="text" name="organization" required autocomplete="organization" />
+                    </label>
+
+
+                    <label title="Select a membership level">Membership Level
+                        <select name="membership-level" required>
+                            <option value="np">NP Membership (Nonprofit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+
+                    <label title="Describe your business or organization">Business/Organization Description
+                        <textarea name="org-description"></textarea>
+                    </label>
+
+
+                    <input type="hidden" name="timestamp" id="timestamp" />
+
+
+                    <input type="submit" value="Submit Application" />
+                </form>
+            </div>
+
+            <div class="levels-wrap">
+                <section class="levels">
+                    <p>Non Profit Membership Level</p>
+                    <button>Read more</button>
+                </section>
+                <section class="levels">
+                    <p>Bronze Membership Level</p>
+                    <button>Read more</button>
+                </section>
+                <section class="levels">
+                    <p>Silver Membership Level</p>
+                    <button>Read more</button>
+                </section>
+                <section class="levels">
+                    <p>Gold Membership Level</p>
+                    <button>Read more</button>
+                </section>
+            </div>
+        </section>
     </main>
     <footer>
         <p>
