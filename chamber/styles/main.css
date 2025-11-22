@@ -362,6 +362,10 @@ h1 {
     display: block;
 }
 
+.title-span {
+    padding: .5rem;
+}
+
 /*---------------FORM SECTION-----------------*/
 
 
