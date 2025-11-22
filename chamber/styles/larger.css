@@ -6,6 +6,8 @@
     footer {
         max-width: 900px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     header {
@@ -52,11 +54,6 @@
         right: 10%;
         bottom: 35%;
         font-size: 1.1rem;
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
