@@ -162,6 +162,7 @@ h2 {
 
 h1 {
     grid-column: 1/-1;
+    padding: .5rem;
 }
 
 /* ----------- DIRECTORY STYLES ----------- */
@@ -331,9 +332,34 @@ h1 {
     grid-template-columns: 1fr;
 }
 
-button {
-    padding: .5rem;
+.openButton {
+    padding: .25rem;
     cursor: pointer;
+}
+
+.dialogBox {
+    margin: auto;
+    padding: 1rem;
+}
+
+.closeButton {
+    padding: .25rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+::backdrop {
+    background-color: #444444;
+    opacity: .5;
+}
+
+.modal-container {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.m-card {
+    display: block;
 }
 
 /*---------------FORM SECTION-----------------*/
@@ -392,6 +418,23 @@ input[type="submit"]:hover {
     margin: 0.5rem;
     border: solid 1px var(--color-dark-gray);
     border-radius: 0 8px 0 8px;
+    /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*---------FOOTER-------------*/

@@ -21,6 +21,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 </head>
 
 <body>
@@ -46,7 +49,7 @@
         <section class="join">
 
             <div class="content">
-                <h1>Join the Chamber of Commerce</h1>
+                <h1>Membership Application Form</h1>
                 <form method="get" action="thankyou.html">
 
 
@@ -104,21 +107,80 @@
             </div>
 
             <div class="levels-wrap">
+                <h1> Membership Levels</h1>
                 <section class="levels">
-                    <p>Non Profit Membership Level</p>
-                    <button>Read more</button>
+                    <span class="m-card">NP Membership (Non-Profit)</span>
+                    <button id="openButton" class="openButton">Read more</button>
+                    <dialog id="dialogBox" class="dialogBox">
+                        <section class="modal-container" aria-labelledby="np-title">
+                            <h2 id="np-title">NP Membership (Non-Profit)</h2>
+                            <p class="cost">Cost: <span class="muted">Free</span></p>
+                            <h3 class="muted">Benefits:</h3>
+                            <ul class="benefits">
+                                <li>Access to chamber networking events</li>
+                                <li>Basic business listing in the chamber directory</li>
+                                <li>Eligibility for community partnership programs</li>
+                            </ul>
+                        </section>
+                        <button id="closeButton" class="closeButton">Close</button>
+                    </dialog>
                 </section>
                 <section class="levels">
-                    <p>Bronze Membership Level</p>
-                    <button>Read more</button>
+                    <span class="m-card">Bronze Membership</span>
+                    <button id="openButton1" class="openButton">Read more</button>
+                    <dialog id="dialogBox1" class="dialogBox">
+                        <section class="modal-container" aria-labelledby="bronze-title">
+                            <h2 id="bronze-title">Bronze Membership</h2>
+                            <p class="cost">Cost: <span class="muted">Low tier</span></p>
+                            <h3 class="muted">Benefits:</h3>
+                            <ul class="benefits">
+                                <li>All NP benefits</li>
+                                <li>Access to member-only training sessions</li>
+                                <li>Discounted event tickets</li>
+                                <li>Standard business listing with contact details</li>
+                            </ul>
+                        </section>
+                        <button id="closeButton1" class="closeButton">Close</button>
+                    </dialog>
                 </section>
                 <section class="levels">
-                    <p>Silver Membership Level</p>
-                    <button>Read more</button>
+                    <span class="m-card">Silver Membership</span>
+                    <button id="openButton2" class="openButton">Read more</button>
+                    <dialog id="dialogBox2" class="dialogBox">
+                        <section class="modal-container" aria-labelledby="silver-title">
+                            <h2 id="silver-title">Silver Membership</h2>
+                            <p class="cost">Cost: <span class="muted">Medium tier</span></p>
+                            <h3 class="muted">Benefits:</h3>
+                            <ul class="benefits">
+                                <li>All Bronze benefits</li>
+                                <li>Priority placement in the business directory</li>
+                                <li>One spotlight feature on the homepage per year</li>
+                                <li>Invitations to select VIP networking events</li>
+                                <li>Moderate advertising discounts</li>
+                            </ul>
+                        </section>
+                        <button id="closeButton2" class="closeButton">Close</button>
+                    </dialog>
                 </section>
                 <section class="levels">
-                    <p>Gold Membership Level</p>
-                    <button>Read more</button>
+                    <span class="m-card">Gold Membership</span>
+                    <button id="openButton3" class="openButton">Read more</button>
+                    <dialog id="dialogBox3" class="dialogBox">
+                        <section class="modal-container" aria-labelledby="gold-title">
+                            <h2 id="gold-title">Gold Membership</h2>
+                            <p class="cost">Cost: <span class="muted">Highest tier</span></p>
+                            <h3 class="muted">Benefits:</h3>
+                            <ul class="benefits">
+                                <li>All Silver benefits</li>
+                                <li>Premium homepage spotlight features</li>
+                                <li>Maximum advertising discounts</li>
+                                <li>Free entry to major chamber events</li>
+                                <li>Exclusive access to high-level business leaders</li>
+                                <li>Priority scheduling for chamber resources and programs</li>
+                            </ul>
+                        </section>
+                        <button id="closeButton3" class="closeButton">Close</button>
+                    </dialog>
                 </section>
             </div>
         </section>
@@ -141,9 +203,6 @@
         </div>
 
     </footer>
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/footer.js" defer></script>
 </body>
 
 </html>
