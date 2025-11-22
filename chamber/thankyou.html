@@ -4,11 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Levels of membership and registration">
+    <meta name="author" content="Daniel Boateng">
+    <title>Membership Registration - Thank you</title>
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Tesano Chamber of Commerce">
+    <meta property="og:description"
+        content="The Tesano Chamber of Commerce Business Directory connects you to a vibrant network of local enterprises driving growth, innovation, and community development in Tesano. Discover trusted entrepreneurs, explore diverse industries, and build valuable partnerships that promote sustainable progress and shared prosperity. Together, we create a thriving environment where businesses flourish, ideas grow, and the Tesano community continues to advance successfully.">
+    <meta property="og:image" content="https://agerockhub.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://agerockhub.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/thankYou.js" defer></script>
 </head>
 
 <body>
-    <h1>Thank you</h1>
+    <header>
+        <img src="images/logo.png" alt="site logo" width="24" height="24">
+        <span>Tesano Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nave-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <div>
+        <button class="keynote">Keynote Tickets</button>
+        <img src="images/tesano.jpg" alt="main landing page image" class="hero-img">
+    </div>
+    <main>
+        <h1>Thank you</h1>
+        <section class="join">
+            <div id="thankYou"></div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Tesano Chamber of Commerce,<br>
+            No.767/22, Off abk Rd.<br>
+            Near the Green Belt.<br>
+            Tesano, Accra-Ghana.
+        </p>
+        <p>
+            <img src="images/youtube.svg" alt="Youtube" width="24">
+            <img src="images/linkedin.svg" alt="Linked in" width="24">
+            <img src="images/twitter.svg" alt="Twitter-X" width="24">
+        </p>
+        <div>
+            <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
