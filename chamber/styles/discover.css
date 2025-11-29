@@ -1,0 +1,96 @@
+/* ---------- DISCOVER CARDS ---------- */
+
+.discover {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Base card styling */
+.discover-card {
+    background: var(--color-light-teal);
+    border: 1px solid var(--color-teal);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.discover-card h2 {
+    background: var(--color-dark-gray);
+    color: var(--color-white);
+    padding: .5rem;
+}
+
+.discover-card figure img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.discover-card p {
+    color: var(--color-text-dark);
+}
+
+.learn-btn {
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background: var(--color-dark-gray);
+}
+
+
+/* ---------- GRID AREAS (SMALL SCREENS 320–640px) ---------- */
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .discover {
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- MEDIUM SCREENS (641–1024px) ---------- */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+}
+
+/* ---------- LARGE SCREENS (1025px and above) ---------- */
+
+@media (min-width: 1025px) {
+    .discover {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}

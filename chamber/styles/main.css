@@ -332,6 +332,12 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+.discover {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .openButton {
     padding: .25rem;
     cursor: pointer;
