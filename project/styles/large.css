@@ -1,0 +1,61 @@
+@media only screen and (min-width: 38rem) {
+
+    /* Center page sections on large screens */
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* HEADER FIX */
+    header {
+        display: grid;
+        grid-template-columns: 50px auto;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* NAVIGATION FIX */
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    /* MAIN FIX — remove 3-column layout (this caused the problem) */
+    main {
+        display: block;
+        padding: 1rem;
+    }
+}
+
+/* TWO-COLUMN LAYOUT FOR .one SECTION */
+@media (min-width: 768px) {
+    .one {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+    .content {
+        margin-bottom: 0;
+    }
+}

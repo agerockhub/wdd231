@@ -1,0 +1,163 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-gray: #E5E5E5;
+    --color-dark-gray: #E5E5E5;
+    --color-blue: #1E4DB7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*----------HEADER---------------*/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 5px 10px;
+    column-gap: 8px;
+    background-color: var(--color-blue);
+    border-bottom: solid 1px var(--color-white);
+    color: var(--color-white);
+}
+
+.site-name {
+    color: var(--color-white);
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+.site-logo {
+    width: 50px;
+    min-height: auto;
+    display: block;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--color-text-dark);
+}
+
+/*--------------HAMBURGER------------------*/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/*--------------NAVIGATION------------------*/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-teal);
+    background-color: #ccc;
+}
+
+.current a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    text-decoration: none;
+    border-bottom: solid 1px var(--color-teal);
+}
+
+.navigation a:hover {
+    background-color: var(--color-text-dark);
+    color: var(--color-black);
+}
+
+
+main {
+    position: relative;
+    font-family: Montserrat;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.content {
+    padding: 2rem;
+    color: #000;
+    border: solid 2px #333;
+    background-color: #ebebeb;
+    margin-bottom: 1%;
+}
+
+.one {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 1px #3333;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 1px #3333;
+    margin-top: 10px;
+}
+
+/*---------FOOTER-------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    /* optional: centers them horizontally */
+    align-items: center;
+    gap: 10px;
+    /* space between images */
+    padding: .5rem;
+}
+
+footer p img {
+    height: 35px;
+    /* optional: keep them uniform */
+    width: auto;
+}

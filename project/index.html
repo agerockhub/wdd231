@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="Staff records and student batches management system, built with HTML, CSS, JavaScript, and JSON to enhance productivity without a database.">
+    <title>StaffManage Pro - Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/smp-logo.png" alt="site logo" class="site-logo">
+        <span class="site-name">StaffManage Pro</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nave-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Staffs</a></li>
+            <li><a href="join.html">Batches</a></li>
+            <li><a href="discover.html">Students</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="one">
+            <div class="content">Overview</div>
+            <div class="content">Completed Batches</div>
+        </section>
+        <section class="two">
+            <div class="content">Total staff</div>
+            <div class="content">Active Batches</div>
+            <div class="content">Weather update</div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Staff Manage Pro,<br>
+            No.767/22, Off abk Rd.<br>
+            Near the Green Belt.<br>
+            Tesano, Accra-Ghana.
+        </p>
+        <p>
+            <img src="images/youtube.svg" alt="Youtube" width="24">
+            <img src="images/linkedin.svg" alt="Linked in" width="24">
+            <img src="images/twitter.svg" alt="Twitter-X" width="24">
+        </p>
+        <div>
+            <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
