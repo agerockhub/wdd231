@@ -1,0 +1,222 @@
+[
+    {
+        "class": "English",
+        "time": "morning",
+        "teacher": {
+            "name": "Adwaa Asame",
+            "image": "./images/pic1.jpg",
+            "address": "Capos, Accra",
+            "subject": "English"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Math",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Kwame Osel",
+            "image": "./images/pic2.jpg",
+            "address": "Biedengen, Accra",
+            "subject": "Math"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Science",
+        "time": "evening",
+        "teacher": {
+            "name": "Alice Mensah",
+            "image": "./images/pic7.jpg",
+            "address": "Haseie, Accra",
+            "subject": "Science"
+        },
+        "status": "active"
+    },
+    {
+        "class": "English",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Daniel Ameako",
+            "image": "./images/pic9.jpg",
+            "address": "Bmuqreri, Accra",
+            "subject": "English"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Math",
+        "time": "morning",
+        "teacher": {
+            "name": "Etua Owusu",
+            "image": "./images/pic5.jpg",
+            "address": "Flises, Accra",
+            "subject": "Math"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Science",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Michael Oppong",
+            "image": "./images/pic15.jpg",
+            "address": "Elleceme, Accra",
+            "subject": "Science"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "English",
+        "time": "evening",
+        "teacher": {
+            "name": "Nana Yas Boakye",
+            "image": "./images/pic1.jpg",
+            "address": "Eizcnie, Accra",
+            "subject": "English"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Math",
+        "time": "morning",
+        "teacher": {
+            "name": "Prince Agyeman",
+            "image": "./images/pic12.jpg",
+            "address": "Vlcpemnis, Accra",
+            "subject": "Math"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Science",
+        "time": "evening",
+        "teacher": {
+            "name": "Akosua Ntow",
+            "image": "./images/pic1.jpg",
+            "address": "Nsilmeris, Accra",
+            "subject": "Science"
+        },
+        "status": "active"
+    },
+    {
+        "class": "English",
+        "time": "morning",
+        "teacher": {
+            "name": "Augustins Nkrum",
+            "image": "./images/pic11.jpg",
+            "address": "Carlumis, Accra",
+            "subject": "English"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Math",
+        "time": "evening",
+        "teacher": {
+            "name": "Sarwaa Amankwau",
+            "image": "./images/pic1.jpg",
+            "address": "Ceca, Accra",
+            "subject": "Math"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Science",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Thomas Ankzah",
+            "image": "./images/pic9.jpg",
+            "address": "Blengob, Accra",
+            "subject": "Science"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "English",
+        "time": "morning",
+        "teacher": {
+            "name": "Mavis Keranteng",
+            "image": "./images/pic1.jpg",
+            "address": "Eirpenis, Accra",
+            "subject": "English"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Math",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Isaac Ansah",
+            "image": "./images/pic12.jpg",
+            "address": "Maels, Accra",
+            "subject": "Math"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Science",
+        "time": "evening",
+        "teacher": {
+            "name": "Comfort Obeng",
+            "image": "./images/pic1.jpg",
+            "address": "Miarenis, Accra",
+            "subject": "Science"
+        },
+        "status": "active"
+    },
+    {
+        "class": "English",
+        "time": "evening",
+        "teacher": {
+            "name": "Joseph Addo",
+            "image": "./images/pic8.jpg",
+            "address": "Ciaenes, Accra",
+            "subject": "English"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "Math",
+        "time": "morning",
+        "teacher": {
+            "name": "Rejoice Tetteh",
+            "image": "./images/pic1.jpg",
+            "address": "Adenta, Accra",
+            "subject": "Math"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Science",
+        "time": "afternoon",
+        "teacher": {
+            "name": "Samuel Narh",
+            "image": "./images/pic15.jpg",
+            "address": "Dansoman, Accra",
+            "subject": "Science"
+        },
+        "status": "completed"
+    },
+    {
+        "class": "English",
+        "time": "morning",
+        "teacher": {
+            "name": "Abena Sackey",
+            "image": "./images/pic10.jpg",
+            "address": "Osu, Accra",
+            "subject": "English"
+        },
+        "status": "active"
+    },
+    {
+        "class": "Math",
+        "time": "evening",
+        "teacher": {
+            "name": "Richmond Torgah",
+            "image": "./images/pic5.jpg",
+            "address": "Madina, Accra",
+            "subject": "Math"
+        },
+        "status": "completed"
+    }
+]

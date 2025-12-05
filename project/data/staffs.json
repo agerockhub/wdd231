@@ -1,121 +1,121 @@
 [
     {
         "name": "Adwaa Asame",
-        "image": "images/teachers/adwaa_asame_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Capos, Accra",
         "subject": "English"
     },
     {
         "name": "Kwame Osel",
-        "image": "images/teachers/kwame_osel_200x200.png",
+        "image": "./images/pic2.jpg",
         "address": "Biedengen, Accra",
         "subject": "Math"
     },
     {
         "name": "Alice Mensah",
-        "image": "images/teachers/alice_mensah_200x200.png",
+        "image": "./images/pic7.jpg",
         "address": "Haseie, Accra",
         "subject": "Science"
     },
     {
         "name": "Daniel Ameako",
-        "image": "images/teachers/daniel_ameako_200x200.png",
+        "image": "./images/pic9.jpg",
         "address": "Bmuqreri, Accra",
         "subject": "English"
     },
     {
         "name": "Etua Owusu",
-        "image": "images/teachers/etua_owusu_200x200.png",
+        "image": "./images/pic5.jpg",
         "address": "Flises, Accra",
         "subject": "Math"
     },
     {
         "name": "Michael Oppong",
-        "image": "images/teachers/michael_oppong_200x200.png",
+        "image": "./images/pic15.jpg",
         "address": "Elleceme, Accra",
         "subject": "Science"
     },
     {
         "name": "Nana Yas Boakye",
-        "image": "images/teachers/nana_yas_boakye_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Eizcnie, Accra",
         "subject": "English"
     },
     {
         "name": "Prince Agyeman",
-        "image": "images/teachers/prince_agyeman_200x200.png",
+        "image": "./images/pic12.jpg",
         "address": "Vlcpemnis, Accra",
         "subject": "Math"
     },
     {
         "name": "Akosua Ntow",
-        "image": "images/teachers/akosua_ntow_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Nsilmeris, Accra",
         "subject": "Science"
     },
     {
         "name": "Augustins Nkrum",
-        "image": "images/teachers/augustins_nkrum_200x200.png",
+        "image": "./images/pic11.jpg",
         "address": "Carlumis, Accra",
         "subject": "English"
     },
     {
         "name": "Sarwaa Amankwau",
-        "image": "images/teachers/sarwaa_amankwau_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Ceca, Accra",
         "subject": "Math"
     },
     {
         "name": "Thomas Ankzah",
-        "image": "images/teachers/thomas_ankzah_200x200.png",
+        "image": "./images/pic9.jpg",
         "address": "Blengob, Accra",
         "subject": "Science"
     },
     {
         "name": "Mavis Keranteng",
-        "image": "images/teachers/mavis_keranteng_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Eirpenis, Accra",
         "subject": "English"
     },
     {
         "name": "Isaac Ansah",
-        "image": "images/teachers/isaac_ansah_200x200.png",
+        "image": "./images/pic12.jpg",
         "address": "Maels, Accra",
         "subject": "Math"
     },
     {
         "name": "Comfort Obeng",
-        "image": "images/teachers/comfort_obeng_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Miarenis, Accra",
         "subject": "Science"
     },
     {
         "name": "Joseph Addo",
-        "image": "images/teachers/joseph_addo_200x200.png",
+        "image": "./images/pic8.jpg",
         "address": "Ciaenes, Accra",
         "subject": "English"
     },
     {
         "name": "Rejoice Tetteh",
-        "image": "images/teachers/rejoice_tetteh_200x200.png",
+        "image": "./images/pic1.jpg",
         "address": "Adenta, Accra",
         "subject": "Math"
     },
     {
         "name": "Samuel Narh",
-        "image": "images/teachers/samuel_narh_200x200.png",
+        "image": "./images/pic15.jpg",
         "address": "Dansoman, Accra",
         "subject": "Science"
     },
     {
         "name": "Abena Sackey",
-        "image": "images/teachers/abena_sackey_200x200.png",
+        "image": "./images/pic10.jpg",
         "address": "Osu, Accra",
         "subject": "English"
     },
     {
         "name": "Richmond Torgah",
-        "image": "images/teachers/richmond_torgah_200x200.png",
+        "image": "./images/pic5.jpg",
         "address": "Madina, Accra",
         "subject": "Math"
     }

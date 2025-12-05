@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/staffs.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/updateStaffs.js" defer></script>
 </head>
 
 <body>
@@ -40,7 +41,31 @@
                 <strong>Staffs profile</strong>
                 <div id="profile"></div>
             </div>
-            <div class="content">Completed Batches</div>
+            <div class="content">
+                <form id="staffForm" class="staff-form">
+                    <h2>Add New Staff</h2>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="image">Image (URL):</label>
+                    <input type="text" id="image" required placeholder="images/photo.jpg">
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required placeholder="Area in Accra">
+
+                    <label for="subject">Subject:</label>
+                    <select id="subject" required>
+                        <option value="">Select Subject</option>
+                        <option value="English">English</option>
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
         </section>
     </main>
     <footer>
