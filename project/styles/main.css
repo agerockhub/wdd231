@@ -161,3 +161,47 @@ footer p img {
     /* optional: keep them uniform */
     width: auto;
 }
+
+/* STAFF PROFILE CARD STYLING */
+
+#profile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.staff-card {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-blue);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+.staff-card:hover {
+    transform: scale(1.03);
+}
+
+.staff-card img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.staff-card h3 {
+    font-size: 1.2rem;
+    color: var(--color-blue);
+    margin-bottom: 8px;
+}
+
+.staff-card p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    color: var(--color-black);
+}

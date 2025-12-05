@@ -59,3 +59,9 @@
         margin-bottom: 0;
     }
 }
+
+@media (min-width: 768px) {
+    #profile {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
