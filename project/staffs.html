@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description"
         content="Staff records and student batches management system, built with HTML, CSS, JavaScript, and JSON to enhance productivity without a database.">
-    <title>StaffManage Pro - Homepage</title>
+    <meta property="og:title" content="Staff ManagePro">
+    <meta property="og:description" content="Teaching staff management website">
+    <meta property="og:image" content="https://agerockhub.github.io/wdd231/project/images/smp-logo.png">
+    <meta property="og:url" content="https://agerockhub.github.io/wdd231/project/index.html">
+    <title>StaffManage Pro - Staffspage</title>
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
@@ -15,6 +19,7 @@
     <script src="scripts/staffs.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/updateStaffs.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
 
 <body>
@@ -36,10 +41,10 @@
         <section class="one">
             <div class="content">
                 <strong>Staffs profile</strong>
-                <div id="profile"></div>
+                <div id="profile"></div> <!--STAFFS FROFILE-->
             </div>
             <div class="content">
-                <form id="staffForm" class="staff-form">
+                <form id="staffForm" class="staff-form"><!--STAFF ENTRY FORM-->
                     <h2>Add New Staff</h2>
 
                     <label for="name">Name:</label>
@@ -79,6 +84,8 @@
         </p>
         <div>
             <p> &copy; <span id="currentyear"></span>Daniel Boateng - Ghana</p>
+            <p><a href="https://youtu.be/X2RfMmipzR8" target="_blank" class="demo">VIDEO DEMONSTRATION & Reflection</a>
+
             <p id="lastModified"></p>
         </div>
 

@@ -370,3 +370,8 @@ footer p img {
     background-color: #000;
     opacity: .75;
 }
+
+.demo {
+    color: var(--color-white);
+    text-decoration: none;
+}
