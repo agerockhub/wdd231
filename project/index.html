@@ -9,13 +9,16 @@
     <title>StaffManage Pro - Homepage</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/staffCount.js" defer></script>
+    <script src="scripts/activeBatches.js" defer></script>
+    <script src="scripts/completedBatches.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
 </head>
 
 <body>
@@ -44,13 +47,30 @@
                     personal and
                     professional staff details, while also tracking current and completed student batches.
                 </p>
+                <button id="openButton" class="modalBtn">More Info.</button>
+                <dialog id="dialogBox">
+                    <p>The following is a summary of what this system offers you:</p>
+                    <ul>
+                        <li>Course information</li>
+                        <li>Current batches</li>
+                        <li>Completed batches</li>
+                        <li>Teachers profile</li>
+                        <li>Add a staff to the system</li>
+                        <li>Add a student to the system</li>
+                    </ul>
+                    <button id="closeButton" class="modalBtn">Close</button>
+                </dialog>
+
             </div>
-            <div class="content">Completed Batches</div>
+            <div class="content"><a href="students.html" class="add">Click here to add/register a students details into
+                    the
+                    system</a>
+            </div>
         </section>
         <section class="two">
-            <div class="content">Total staff</div>
-            <div class="content">Active Batches</div>
-            <div class="content">Weather update</div>
+            <div class="content" id="totalStaff">Total staff</div>
+            <div class="content" id="activeBatches">Active Batches</div>
+            <div class="content" id="completed">Completed batches</div>
         </section>
     </main>
     <footer>

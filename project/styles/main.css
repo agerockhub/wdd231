@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+    font-family: Roboto;
+}
+
 /*----------HEADER---------------*/
 header {
     display: grid;
@@ -84,11 +88,14 @@ header span {
 
 .navigation a {
     display: block;
-    padding: .8rem 10px;
-    color: var(--color-text-dark);
+    padding: .8rem 25px;
+    border-radius: 8px;
+    font-family: Poppins;
+    color: var(--color-white);
     text-decoration: none;
-    border-bottom: solid 1px var(--color-teal);
-    background-color: #ebebeb;
+    border-bottom: solid 1px var(--color-white);
+    background-color: var(--color-blue);
+    font-size: 1.2em;
 }
 
 .current a {
@@ -101,7 +108,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--color-text-dark);
+    background-color: #279CF5;
     color: var(--color-black);
 }
 
@@ -118,15 +125,16 @@ main {
 .content {
     padding: 2rem;
     color: #000;
-    border: solid 2px #333;
-    background-color: #ebebeb;
+    border: solid 1px #333;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
     margin-bottom: 1%;
 }
 
 .one {
     display: grid;
     grid-template-columns: 1fr;
-    border: solid 1px #3333;
 }
 
 .one-new {
@@ -337,4 +345,28 @@ footer p img {
 
 .status.completed {
     background-color: red;
+}
+
+.add {
+    text-decoration: none;
+    color: red;
+}
+
+.modalBtn {
+    padding: .5rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 0;
+}
+
+#dialogBox {
+    padding: 2rem;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: #000;
+    opacity: .75;
 }
